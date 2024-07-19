@@ -91,13 +91,13 @@ const menu = [
   },
   {
     id: 10,
-    title: "명랑 생조개 손칼국수",
-    category: "면",
-    price: "8,000원~",
-    img: "./images/칼국수.jpg",
-    desc: `<span>메뉴 :</span> 물총칼국수, 전복+물총칼국수, 해물파전, 물총탕, 전복수육, 파김치수육</br>
-           <span>장점 :</span> </br>
-           <span>단점 :</span> `,
+    title: "투웨이 버거 치폴레",
+  category: "빵",
+    price: "5,900원~",
+    img: "./images/투웨이.jpg",
+    desc: `<span>메뉴 :</span> 치폴레버거 치폴레 베이컨치즈, 미트칠리 프라이</br>
+           <span>장점 :</span> 부드러운 패티 약간의 소스 수제버거 프렌차이즈의 정석, 상대적으로 다양한 메뉴를 가지고 있다. </br>
+           <span>단점 :</span> 거리가 멀다. 수제버거집이다 보니 버거킹보다 비싸다 `,
   },
 ];
 // get parent element
@@ -110,6 +110,7 @@ window.addEventListener("DOMContentLoaded", function () {
   displayMenuButtons();
 });
 
+// 화면에 내용 가져오는 클래스
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     // console.log(item);
@@ -130,6 +131,7 @@ function displayMenuItems(menuItems) {
   sectionCenter.innerHTML = displayMenu;
 }
 
+// 버튼을 누르면 해당 카테고리 내용만 정렬
 function displayMenuButtons() {
   // menuItems
   const categories = menu.reduce(

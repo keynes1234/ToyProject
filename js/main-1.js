@@ -87,12 +87,13 @@ const menu = [
     img: "./images/목화제과.jpg",
     desc: `<span>메뉴 :</span> 소금빵, 화이트 볼, 명란 감자 소금빵, 궁극의 참치빵, 에그타르트 </br>
            <span>장점 :</span> 성심당이랑 비비는 맛, 빵지순례 필수코스 가까운 거리 가끔 밥 대신 간단하게 떼우기도 괜찮음 </br>
-           <span>단점 :</span> 밥으로 먹기에는 조금 부족할 수 있다. 하루에 정해진 양 만큼만 팔기 때문에 조기소진될 가능성이 있다. `,
+           <span>단점 :</span> 월, 화 휴무.</br>
+            밥으로 먹기에는 조금 부족할 수 있다. 하루에 정해진 양 만큼만 팔기 때문에 조기소진될 가능성이 있다. `,
   },
   {
     id: 10,
     title: "투웨이 버거 치폴레",
-  category: "빵",
+    category: "빵",
     price: "5,900원~",
     img: "./images/투웨이.jpg",
     desc: `<span>메뉴 :</span> 치폴레버거 치폴레 베이컨치즈, 미트칠리 프라이</br>
@@ -114,7 +115,6 @@ window.addEventListener("DOMContentLoaded", function () {
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     // console.log(item);
-
     return `<article class="menu-item">
           <img src=${item.img} class="photo" alt=${item.title} />
           <div class="item-info">

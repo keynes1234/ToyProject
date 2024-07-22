@@ -56,16 +56,23 @@ Variables
   --fixed-width: 620px;
 }
 @font-face {
-  font-family: 'BMHANNAPro';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+  font-family: "BMHANNAPro";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
-  }
+}
 /*
 =============== 
 Global Styles
 ===============
 */
+@font-face {
+  font-family: 'HancomMalangMalang-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
 *,
 ::after,
@@ -101,7 +108,7 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
   font-family: var(--ff-primary);
 }
 h1 {
@@ -116,13 +123,14 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
-span{
+span {
   color: var(--clr-gold);
   font-weight: bolder;
 }
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+  font-family: 'HancomMalangMalang-Regular';
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -135,7 +143,7 @@ p {
     font-size: 1.75rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 0.79rem;
   }
   body {
     font-size: 1rem;
@@ -145,6 +153,7 @@ p {
   h3,
   h4 {
     line-height: 1;
+    font-family: "GmarketSansMedium";
   }
 }
 /*  global classes */
@@ -162,10 +171,12 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
+  
 }
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
+  
 }
 /* section */
 .section {
@@ -182,13 +193,31 @@ main {
 Menu
 ===============
 */
+@font-face {
+  font-family: "Yeongdo-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .menu {
   padding: 5rem 0;
 }
+#title {
+  font-family: "Yeongdo-Rg";
+}
 .title {
   text-align: center;
   margin-bottom: 2rem;
+  font-family: "Yeongdo-Rg";
 }
 .underline {
   width: 5rem;
@@ -214,6 +243,7 @@ Menu
   color: var(--clr-gold);
   cursor: pointer;
   transition: var(--transition);
+  font-family: "BMHANNAPro";
 }
 .filter-btn:hover {
   background: var(--clr-gold);
@@ -242,16 +272,19 @@ Menu
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-grey-5);
+  
 }
 .item-info h4 {
   margin-bottom: 0.5rem;
 }
 .price {
   color: var(--clr-gold);
+  
 }
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
+  
 }
 
 @media screen and (min-width: 768px) {
